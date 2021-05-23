@@ -14,8 +14,8 @@ public class UserBo {
    private String userName;
     private String userPassword;
 
-    public UserBo(int userId, String userName, String userPassword) {
-        this.userId = userId;
+    public UserBo(String userName, String userPassword) {
+        userId = 1;
         this.userName = userName;
         this.userPassword = userPassword;
     }
