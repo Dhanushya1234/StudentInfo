@@ -10,12 +10,12 @@ package studentBo;
  * @author lenovo
  */
 public class StudentBo {
-    String name;
-    String gender;
-    String dob;
-    int age;
-    String address;
-    int mobileNo;
+    private String name;
+    private String gender;
+    private String dob;
+    private int age;
+    private String address;
+    private int mobileNo;
 
     public StudentBo(String name, String gender, String dob, int age, String address, int mobileNo) {
         this.name = name;
@@ -48,6 +48,31 @@ public class StudentBo {
 
     public int getMobileNo() {
         return mobileNo;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;   
+        
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setMobileNo(int mobileNo) {
+        this.mobileNo = mobileNo;
     }
     
 }
