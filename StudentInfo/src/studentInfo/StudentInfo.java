@@ -28,6 +28,10 @@ public class StudentInfo {
         System.out.println(" My user name is:"+user.getUserName()+ " User id is:"+user.getUserId() +" And my password is:"+user.getUserPassword());
         users.add(user);
         }
+        
+        
+        
+        
  }
     
 }
