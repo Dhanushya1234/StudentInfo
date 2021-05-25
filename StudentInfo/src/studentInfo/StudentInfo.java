@@ -5,7 +5,10 @@
  */
 package studentInfo;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import studentBo.UserBo;
 
 /**
  *
@@ -18,28 +21,13 @@ public class StudentInfo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ArrayList<UserBo> users=new ArrayList<UserBo>();
         UserCreate obj=new UserCreate();
-    String name;
-    String password;
-    Scanner in=new Scanner(System.in);
-    System.out.println("Enter user name");
-    name=in.next();
-    System.out.println("Enter your password");
-    password =in.next(); 
-    if(obj.checkuser(name))
-    {
-        if(obj.checkpass(password))
-        { 
-            System.out.println("WELCOME");
+        for(int i=0;i<3;i++){ 
+        UserBo user= obj.createUser(i+1);
+        System.out.println(" My user name is:"+user.getUserName()+ " User id is:"+user.getUserId() +" And my password is:"+user.getUserPassword());
+        users.add(user);
         }
-        else{
-                System.out.println("Enter valid password");
-            }
-    }
-    else
-    {
-     System.out.println("Enter Valid User Name");
-    }
  }
     
 }

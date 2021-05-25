@@ -13,8 +13,8 @@ public class UserBo {
    private String userName;
     private String userPassword;
 
-    public UserBo(String userName, String userPassword) {
-        userId = 1;
+    public UserBo(int userId,String userName, String userPassword) {
+        this.userId = userId;
         this.userName = userName;
         this.userPassword = userPassword;
     }
