@@ -13,13 +13,13 @@ public class CertificateBo {
     private String activity;
     private String nameofCertificate;
     private String dateofCertificate;
-    private String oraganizer;
+    private String organizer;
     private String desc;
     
-    public CertificateBo(String activity,String nameofCertificate, String dateofCertificate, String oraganizer, String desc) {
+    public CertificateBo(String activity,String nameofCertificate, String dateofCertificate, String organizer, String desc) {
         this.nameofCertificate = nameofCertificate;
         this.dateofCertificate = dateofCertificate;
-        this.oraganizer = oraganizer;
+        this.organizer = organizer;
         this.desc = desc;
         this.activity = activity;
     }
@@ -34,7 +34,7 @@ public class CertificateBo {
     }
 
     public String getOraganizer() {
-        return oraganizer;
+        return organizer;
     }
 
     public String getDesc() {
@@ -57,7 +57,7 @@ public class CertificateBo {
     }
 
     public void setOraganizer(String oraganizer) {
-        this.oraganizer = oraganizer;
+        this.organizer = oraganizer;
     }
 
     public void setDesc(String desc) {
@@ -70,3 +70,4 @@ public class CertificateBo {
     
       
 }
+ 
