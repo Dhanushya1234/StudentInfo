@@ -18,7 +18,7 @@ public class StudCreate {
      String dob;
      int age;
      String address;
-     int mobileNo;
+     String mobileNo;
      StudentBo StudCreate(){
          Scanner in=new Scanner(System.in);
          System.out.println("Enter Your Name");
@@ -32,7 +32,7 @@ public class StudCreate {
          System.out.println("Enter Your Address");
          address=in.next();
          System.out.println("Enter Your Mobile Number");
-         mobileNo=in.nextInt();
+         mobileNo=in.next();
          
          
          StudentBo student=new StudentBo(name,gender,dob,age,address,mobileNo);

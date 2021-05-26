@@ -15,9 +15,9 @@ public class StudentBo {
     private String dob;
     private int age;
     private String address;
-    private int mobileNo;
+    private String mobileNo;
 
-    public StudentBo(String name, String gender, String dob, int age, String address, int mobileNo) {
+    public StudentBo(String name, String gender, String dob, int age, String address, String mobileNo) {
         this.name = name;
         this.gender = gender;
         this.dob = dob;
@@ -46,7 +46,7 @@ public class StudentBo {
         return address;
     }
 
-    public int getMobileNo() {
+    public String getMobileNo() {
         return mobileNo;
     }
 
@@ -71,7 +71,7 @@ public class StudentBo {
         this.address = address;
     }
 
-    public void setMobileNo(int mobileNo) {
+    public void setMobileNo(String mobileNo) {
         this.mobileNo = mobileNo;
     }
     

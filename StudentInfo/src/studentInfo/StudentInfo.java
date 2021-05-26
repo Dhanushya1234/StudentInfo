@@ -27,8 +27,10 @@ public class StudentInfo {
         StudCreate obj1=new StudCreate();
         for(int i=0;i<3;i++){ 
         UserBo user= obj.createUser(i+1);
-        System.out.println(" My user name is:"+user.getUserName()+ " User id is:"+user.getUserId() +" And my password is:"+user.getUserPassword());
         StudentBo stud=obj1.StudCreate();
+        System.out.println(" My user name is:"+user.getUserName());
+        System.out.println(" User id is:"+user.getUserId());
+        System.out.println(" And my password is:"+user.getUserPassword());
         System.out.println("Name:"+stud.getName());
         System.out.println("Gender:"+stud.getGender());
         System.out.println("DOB:"+stud.getDob());
@@ -38,10 +40,6 @@ public class StudentInfo {
         users.add(user);
         student.add(stud);
         }
-        
-        
-        
-        
  }
     
 }
